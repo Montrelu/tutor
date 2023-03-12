@@ -27,8 +27,7 @@ app = express();
 
 
 app.use(CookieParser())
-app.use(passport.initialize()) // 
-app.use(passport.session())
+
 app.set("view engine", "ejs")
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
