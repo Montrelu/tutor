@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./styles/styles.css" rel="stylesheet" />
+  </head>
+  <body class="flex w-max flex-col">
+    <%- include('./partials/header.ejs')%>
+    <div class="w-max flex w-64 justify-self-center self-center flex-col">
+      <form
+        class="bg-white w-max shadow-md rounded px-8 pt-6 pb-8 flex flex-col"
+        action="/register"
+        method="post"
+      >
+        <div>
+          <label class="block" for="email"> Email </label>
+          <input
+            class="shadow"
+            type="email"
+            placeholder="Enter email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block" for="university"> University </label>
+          <input
+            class="shadow"
+            type="list"
+            placeholder="Enter university"
+            name="university"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block" for="password"> Subjects </label>
+          <input
+            class="shadow"
+            type="text"
+            placeholder="Enter subjects"
+            name="subjects"
+            required
+          />
+        </div>
+        <div>
+          <label class="block" for="password"> Amount of students </label>
+          <input
+            class="shadow"
+            type="number"
+            placeholder="Max:4"
+            name="subjects"
+            required
+          />
+        </div>
+
+        <button
+          class="bg-purple-400 mt-2 px-4 py-2 text-white rounded font-bold text-lg"
+          type="submit"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
